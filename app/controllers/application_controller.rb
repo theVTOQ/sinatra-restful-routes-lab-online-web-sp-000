@@ -26,6 +26,6 @@ class ApplicationController < Sinatra::Base
     @recipe.ingredients = params[:ingredients] if !!params[:ingredients]
     @recipe.cook_time = params[:cook_time] if !!params[:cook_time]
 
-    redirect "recipes/:id"
+    redirect "recipes/#{params[:id]}"
   end
 end
