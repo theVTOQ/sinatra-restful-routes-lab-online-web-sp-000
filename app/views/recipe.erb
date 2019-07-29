@@ -1,3 +1,9 @@
 <%= recipe.name %>
 <h4>Ingredients: <%= recipe.ingredients %></h4>
 <h4>Cook Time: <%= recipe.cook_time %></h4>
+
+<form action="/recipes/<%= %>/edit" method="POST">
+  <input type="hidden" id="hidden" name="_method" value="patch">
+
+  <input type="submit" id="submit">
+</form>
