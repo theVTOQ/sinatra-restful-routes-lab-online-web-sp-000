@@ -18,4 +18,8 @@ class ApplicationController < Sinatra::Base
   get "/recipes/:id/edit" do
     erb :edit
   end
+
+  post "/recipes/:id/edit" do
+
+  end
 end
