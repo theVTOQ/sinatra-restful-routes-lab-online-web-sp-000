@@ -26,5 +26,6 @@ class ApplicationController < Sinatra::Base
     @recipe.ingredients = params[:ingredients] if !!params[:ingredients]
     @recipe.cook_time = params[:cook_time] if !!params[:cook_time]
 
+    erb :recipe
   end
 end
